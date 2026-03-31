@@ -7,10 +7,10 @@ namespace Bulkyweb.Models
         [Key]
         public int CategoryId {get;set; }
         
-        [Required(ErrorMessage = "Name is required")]
+        [Required(ErrorMessage = "Name required")]
         [Display(Name = "Category Name")]
         [StringLength(50, MinimumLength = 3, ErrorMessage = "Name must be between 3 and 50 characters")]
-        public  string Name {get;set; }
+        public  string? Name {get;set; }
 
         [Required(ErrorMessage = "Display Order is required")]
         [Display(Name = "Display Order")]

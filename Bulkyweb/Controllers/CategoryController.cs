@@ -26,6 +26,7 @@ namespace Bulkyweb.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(Category obj)
         {
+            //Custom validations
             //if (obj.Description.ToString() == obj.Name)
             //{
             //    ModelState.AddModelError("Description", "Displayorder cannot be same as name");
